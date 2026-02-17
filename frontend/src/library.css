@@ -1,0 +1,377 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f3f5f8;
+  color: #1c1f24;
+}
+
+.nuaca-topbar {
+  background: #f2f2f2;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* logo */
+.topbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.topbar-logo {
+  height: 48px;
+  object-fit: contain;
+}
+
+/* menu */
+.topbar-menu {
+  display: flex;
+  gap: 22px;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.topbar-menu a {
+  text-decoration: none;
+  color: #444;
+}
+
+.topbar-menu a:hover {
+  color: #000;
+}
+
+/* right side */
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+
+
+/* ===== NAVBAR ===== */
+
+.navbar {
+  background: #0b2a4a;
+  color: white;
+  padding: 16px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-title {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.nav-links button {
+  background: none;
+  border: none;
+  color: white;
+  margin-left: 26px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav-links button:hover {
+  opacity: 0.8;
+}
+
+/* ===== LAYOUT ===== */
+
+.container.layout {
+  display: flex;
+  gap: 28px;
+  width: 1100px;
+  margin: 36px auto;
+}
+
+/* ===== SIDEBAR ===== */
+
+.sidebar {
+  width: 220px;
+  background: white;
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.side-title {
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: #0b2a4a;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 8px 4px;
+  text-align: left;
+  font-weight: 600;
+  color: #2a2f36;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.sidebar button:hover {
+  background: #eef3f9;
+}
+
+.side-active {
+  background: #dde7f4 !important;
+}
+
+/* ===== MAIN CARD ===== */
+
+.main {
+  flex: 1;
+  background: white;
+  padding: 28px 34px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+h2 {
+  margin-top: 0;
+  color: #0b2a4a;
+}
+
+/* ===== FORMS ===== */
+
+input, select {
+  width: 100%;
+  padding: 11px;
+  margin-bottom: 14px;
+  border: 1px solid #ccd5e2;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button {
+  background: #0b2a4a;
+  color: white;
+  border: none;
+  padding: 11px 16px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #163d66;
+}
+
+/* ===== LIST ===== */
+
+.section-title {
+  margin-top: 26px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #0b2a4a;
+}
+
+.book-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 8px;
+  border-bottom: 1px solid #e6ebf2;
+  border-radius: 4px;
+}
+
+.book-row:hover {
+  background: #f7f9fc;
+}
+
+.book-row a {
+  color: #0b2a4a;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.auth-center {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-card {
+  width: 420px;
+  background: white;
+  padding: 34px;
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+
+.user-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.user-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.user-dropdown {
+  position: absolute;
+  right: 0;
+  top: 36px;
+  background: white;
+  color: #1c1f24;
+  min-width: 160px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  padding: 10px;
+  z-index: 100;
+}
+
+.user-dropdown button {
+  width: 100%;
+  margin-top: 8px;
+  background: #0b2a4a;
+}
+
+.user-role {
+  font-size: 13px;
+  opacity: 0.7;
+}
+/* ===== FILE CARDS ===== */
+
+.file-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.file-card {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.file-icon {
+  font-size: 28px;
+}
+
+.file-info h4 {
+  margin: 8px 0 4px;
+  color: #0b2a4a;
+}
+
+.file-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.file-cat {
+  font-size: 12px;
+  background: #eef3f8;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.file-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+}
+
+.file-actions a {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0b2a4a;
+  text-decoration: none;
+}
+/* ===== PDF PREVIEW ===== */
+
+.pdf-preview {
+  margin-top: 30px;
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.pdf-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.pdf-header button {
+  background: #0b2a4a;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ===== NUACA-STYLE FOOTER ===== */
+
+.nuaca-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #0b2a4a;
+  color: white;
+  padding: 30px 50px;
+  font-size: 14px;
+}
+
+.nuaca-footer .footer-section {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.footer-about h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-contact h5,
+.footer-links h5 {
+  font-size: 15px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.footer-contact p {
+  margin: 4px 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 14px;
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.social-icons a {
+  color: white;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  opacity: 0.7;
+}
