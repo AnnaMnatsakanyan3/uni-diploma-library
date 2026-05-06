@@ -1,24 +1,28 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="nuaca-footer">
 
       <div className="footer-section footer-about">
-        <h4>National University of Architecture and Construction of Armenia</h4>
-        <p>Students Digital Library Portal</p>
+        <h4>{t("footerTitle")}</h4>
+        <p>{t("footerSubtitle")}</p>
       </div>
 
       <div className="footer-section footer-contact">
-        <h5>Contact</h5>
-        <p>105 Teryan St, Yerevan, Armenia</p>
-        <p>Phone: +374 10 123456</p>
-        <p>Email: info@nuaca.am</p>
+        <h5>{t("contact")}</h5>
+        <p>{t("footerAddress")}</p>
+        <p>{t("footerPhone1")}</p>
+        <p>{t("footerPhone2")}</p>
+        <p>{t("footerEmail")}</p>
       </div>
 
       <div className="footer-section footer-links">
-        <h5>Follow Us</h5>
+        <h5>{t("followUs")}</h5>
         <div className="social-icons">
           <a href="https://facebook.com" target="_blank" rel="noreferrer">
             <FaFacebookF />

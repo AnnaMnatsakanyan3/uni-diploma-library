@@ -4,19 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.15.0",
     "bcrypt": "^6.0.0",
     "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
     "express": "^5.2.1",
-    "express-session": "^1.19.0",
-    "icons": "^1.0.0",
+    "jsonwebtoken": "^9.0.2",
     "multer": "^2.0.2",
     "mysql2": "^3.17.1",
-    "react": "^19.2.4"
+    "node-cron": "^4.2.1",
+    "nodemailer": "^8.0.4",
+    "pdf-parse": "^2.4.5"
   }
 }
